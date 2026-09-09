@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: diario-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: diario_user
+      POSTGRES_PASSWORD: diario_pass
+      POSTGRES_DB: diario_leitura
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  api:
+    build: ./backend
+    container_name: diario-api
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://diario_user:diario_pass@db:5432/diario_leitura
+    depends_on:
+      - db
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    container_name: diario-frontend
+    restart: unless-stopped
+    depends_on:
+      - api
+    ports:
+      - "8080:80"
+
+volumes:
+  db_data:

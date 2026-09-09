@@ -1,0 +1,73 @@
+/* Diário de Leitura — tokens de tema */
+
+:root {
+  --bg: #F7F1E4;
+  --bg-elevated: #FFFBF2;
+  --text: #3A2E27;
+  --text-muted: #7A6A5C;
+  --accent: #6B7A4F;
+  --accent-strong: #55643D;
+  --highlight: #A8492E;
+  --border: #DDD2BC;
+  --shadow: rgba(58, 46, 39, 0.08);
+
+  --font-display: "Lora", Georgia, serif;
+  --font-body: "Karla", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #221B16;
+  --bg-elevated: #2C231C;
+  --text: #EDE3D3;
+  --text-muted: #A99A87;
+  --accent: #8FA06B;
+  --accent-strong: #A6B885;
+  --highlight: #C97456;
+  --border: #3D3128;
+  --shadow: rgba(0, 0, 0, 0.35);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.55;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg-elevated);
+}

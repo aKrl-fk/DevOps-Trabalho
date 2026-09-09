@@ -1,4 +1,4 @@
-# 📖 Diário de Leitura
+# Entre Páginas
 
 Aplicação web para acompanhar sua jornada de leitura: cadastre os livros que está lendo, registre seu progresso página a página, escreva anotações, guarde os trechos mais memoráveis e avalie cada livro ao terminar.
 
@@ -28,7 +28,8 @@ Demonstrar, na prática, a adoção de práticas DevOps em um projeto de softwar
 - PostgreSQL
 
 **Frontend**
-- HTML5, CSS3 (variáveis CSS para temas) e JavaScript puro
+- HTML5, CSS3
+ e JavaScript puro
 
 **Infraestrutura**
 - Docker e Docker Compose
@@ -96,6 +97,10 @@ O ambiente do Diário de Leitura depende de três peças (API, banco de dados e 
 ## Integração Contínua
 
 O fluxo de CI (GitHub Actions) roda automaticamente a cada push, executando build e verificação da aplicação — detalhes e evidências no relatório da atividade.
+
+## Autoria
+
+Desnvolvido por Maria Karoline Pedro Barbosa, como atividade prática da disciplina de DevOps e Integração Contínua.
 
 ## Licença
 

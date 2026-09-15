@@ -1,4 +1,4 @@
-# Entre Páginas
+# 📖 Diário de Leitura
 
 Aplicação web para acompanhar sua jornada de leitura: cadastre os livros que está lendo, registre seu progresso página a página, escreva anotações, guarde os trechos mais memoráveis e avalie cada livro ao terminar.
 
